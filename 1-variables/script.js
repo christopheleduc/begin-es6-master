@@ -48,6 +48,8 @@ settings.resolution = [3840, 2160]
 
 console.log(settings, savedGame)
 
+// 1.1
+
 // 1) Remplacez toutes les occurences de var par let.
 // Cela ne change rien sauf la portée
 // 2) Constatez que cela ne change rien. Désormais on n'utilisera plus var mais let ou const
@@ -57,5 +59,19 @@ console.log(settings, savedGame)
 // 4) Expliquez l'erreur
 // La variable age ne peut etre une constante puisqu'elle a voccation à voir sa valeur modifiée!
 // 5) Corrigez le code en conservant le maximum de valeurs constantes
-// "age" et "unless" sont modifiés à la ligne 9 & 10, donc = "let". "savedGame" est réinitialisé (vidé) à la ligne 45 donc = "let".
-// En revanche, "settings" voit la valeur de ses objets modifiés donc on peut conserver "const"... 
+// "age" et "unless" sont modifiés à la ligne 9 & 10, donc = "let".
+
+// 2.2
+
+// 1) Remplacez toutes les occurences de let par const.
+// 2) Expliquez l'absence l'erreur
+// La definition d'un tableau avec une portée constante, n'empeche pas d'ajouter ou supprimer des valeurs dans le tableau.
+
+// 2.3
+
+// 1) Remplacez toutes les occurences de let par const.
+// 2) Expliquez l'erreur
+// "savedGame" est réinitialisé (vidé) à la ligne 45 donc = "let".
+// En revanche, "settings" voit la valeur de ses objets modifiés donc on peut conserver "const"...
+// Avec des objets, les valeurs peuvent etre modifiée, mais on ne peut pas les "réassigner".
+// 3) Corrigez le code en conservant le maximum de valeurs constantes
