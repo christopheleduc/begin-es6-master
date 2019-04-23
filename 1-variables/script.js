@@ -1,8 +1,8 @@
 //1.1 Types simples
 
-var name = 'Jacques'
-var age = 80
-var useless = 'something'
+const name = 'Jacques'
+let age = 80
+let useless = 'something'
 
 console.log(name, age, useless)
 
@@ -14,8 +14,8 @@ console.log(name, age, useless)
 //----------------------//
 //1.2 Tableaux
 
-let fruits = ['apple', 'pear', 'cherry']
-let vegetables = ['potato', 'curlyflower', 'tomato']
+const fruits = ['apple', 'pear', 'cherry']
+const vegetables = ['potato', 'curlyflower', 'tomato']
 
 console.log(fruits, vegetables)
 
@@ -27,7 +27,7 @@ console.log(fruits, vegetables)
 //----------------------//
 //1.2 Objets
 
-let settings = {
+const settings = {
     sound: true,
     music: false,
     graphics: 'high',
@@ -47,3 +47,15 @@ settings.music = true
 settings.resolution = [3840, 2160]
 
 console.log(settings, savedGame)
+
+// 1) Remplacez toutes les occurences de var par let.
+// Cela ne change rien sauf la portée
+// 2) Constatez que cela ne change rien. Désormais on n'utilisera plus var mais let ou const
+// OK! C'est déjà ce que je faisait ...
+// 3) Remplacez toutes les occurences de let par const.
+// Cela génère une erreur
+// 4) Expliquez l'erreur
+// La variable age ne peut etre une constante puisqu'elle a voccation à voir sa valeur modifiée!
+// 5) Corrigez le code en conservant le maximum de valeurs constantes
+// "age" et "unless" sont modifiés à la ligne 9 & 10, donc = "let". "savedGame" est réinitialisé (vidé) à la ligne 45 donc = "let".
+// En revanche, "settings" voit la valeur de ses objets modifiés donc on peut conserver "const"... 
