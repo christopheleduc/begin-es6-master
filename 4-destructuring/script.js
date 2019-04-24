@@ -30,10 +30,10 @@ console.log(age)
 function perturbate(){
     for (let index = 0; index < Object.keys(data).length; index++) {
         //const element = array[index];
-        const {date_debut, date_fin, pert_texte} = {date_debut:Object.values(data)[index].dateDebut, date_fin:Object.values(data)[index].dateFin, pert_texte:Object.values(data)[index].texte}
-        console.log(date_debut);
-        console.log(date_fin);
-        console.log(pert_texte);
+        const {dateDebut, dateFin, texte} = Object.values(data)[index]
+        console.log(dateDebut);
+        console.log(dateFin);
+        console.log(texte);
        
     }
 }
